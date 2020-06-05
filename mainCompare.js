@@ -1,4 +1,4 @@
-const {Encoder, checkIncludeNumber} = require('./converter')
+const {Encoder, checkIncludeNumber} = require('./modules/converter')
 
 // get texts from command line argument
 const inputs = process.argv.slice(2) 
