@@ -11,7 +11,7 @@ command for Run มีทั้งหมด 3 คำสั่งครับ
 
 new features added
 - รับ กี่ args ก็ได้โดยใช้การเว้นวรรคในการแบ่ง เช่น npm run encode don ruksachai onglaor เป็นต้น 
-- เพิ่ม warning แจ้งว่าใน text ที่รับเข้ามานั้น มีตัวเลขผสมอยู่ตัว เช่น "(node:20692) Warning: "24ismybrithday" includes number, You wil confuse with string encoded"
+- เพิ่ม Error แจ้งว่าใน text ที่รับเข้ามานั้น มีตัวเลขผสมอยู่ตัว เช่น "Error :"dd44" includes number, Can't encode it"
 
 to do features
 - เพิ่ม Decoder เข้ามาด้วยสำหรับการถอดข้อความ ที่ถูก Encoder 

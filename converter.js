@@ -1,12 +1,11 @@
 // this function for check String contain number 
 const checkIncludeNumber =  (text) =>{ 
     if(text.match(/([0-9])+/g)){
-        process.emitWarning(`"${text}" includes number, You wil confuse with string encoded`)
+        throw new Error(`"${text}" includes number, Can't encode it`)
     }
 }
 // this function do encode string to Run Length Encoded format 
-const Encoder = (text) => { 
-    checkIncludeNumber(text)
+const Encoder = (text) => {  
     let prevChar = text[0] 
     let count = 1
     let newString = ""
@@ -21,7 +20,8 @@ const Encoder = (text) => {
     }  
     newString+=`${prevChar}${count}`
     return newString
+    
 }
 
 
-module.exports =  Encoder
+module.exports =  {Encoder, checkIncludeNumber}
