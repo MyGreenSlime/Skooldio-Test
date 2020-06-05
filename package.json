@@ -2,9 +2,10 @@
   "name": "skooldio",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
-    "encode": "node index.js ",
+    "encode": "node mainEncode.js ",
+    "compare" : "node mainCompare.js",
     "test": "jest"
   },
   "author": "",
